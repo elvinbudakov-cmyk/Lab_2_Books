@@ -1,0 +1,56 @@
+﻿
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Онлайн-бібліотека</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Онлайн-бібліотека</h1>
+
+        <p>Пошук книг за допомогою Open Library API</p>
+
+    </header>
+
+    <main>
+        <section class="block">
+            <h2>Пошук книг</h2>
+
+            <label for="search">Назва книги, автор або ключове слово:</label>
+            <input type="text"
+                   id="search"
+                   placeholder="Введіть пошуковий запит"
+                   autocomplete="off">
+
+            <button type="button" id="search-btn">Пошук</button>
+            <p id="status">Введіть запит для пошуку книг.</p>
+        </section>
+
+        <section class="block">
+            <h2>Результати за назвою</h2>
+            <div id="title-results"></div>
+        </section>
+
+        <section class="block">
+            <h2>Результати за автором</h2>
+            <div id="author-results"></div>
+        </section>
+
+        <section class="block">
+            <h2>Результати за жанром</h2>
+            <div id="genre-results"></div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Будаков Е. Г. | КІУКІ-24-4 | ХНУРЕ, 2026</p>
+    </footer>
+
+    <script src="https://unpkg.com/rxjs@7.8.1/dist/bundles/rxjs.umd.min.js"></script>
+    <script src="app.js"></script>
+</body>
+</html>

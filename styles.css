@@ -1,0 +1,147 @@
+﻿
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f3f5f9;
+    color: #333;
+}
+
+header {
+    background: #31566d;
+    color: white;
+    text-align: center;
+    padding: 25px 15px;
+}
+
+    header h1 {
+        margin: 0 0 10px;
+        font-size: 28px;
+    }
+
+    header p {
+        margin: 0;
+        font-size: 14px;
+    }
+
+main {
+    max-width: 950px;
+    margin: 25px auto;
+    padding: 0 15px;
+}
+
+.block {
+    background: white;
+    padding: 25px;
+    margin-bottom: 20px;
+    border-radius: 7px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.07);
+}
+
+h2 {
+    margin: 0 0 18px;
+    font-size: 20px;
+    color: #31566d;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+input {
+    width: 100%;
+    padding: 11px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+}
+
+button {
+    margin-top: 15px;
+    padding: 10px 22px;
+    background: #31566d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+    button:hover {
+        background: #244356;
+    }
+
+#status {
+    font-size: 14px;
+    color: #666;
+    margin-top: 15px;
+}
+
+.book-item {
+    display: flex;
+    gap: 15px;
+    padding: 15px 0;
+    border-bottom: 1px solid #ddd;
+}
+
+    .book-item:last-child {
+        border-bottom: none;
+    }
+
+    .book-item img {
+        width: 85px;
+        height: 120px;
+        object-fit: cover;
+        flex-shrink: 0;
+    }
+
+.book-info {
+    flex: 1;
+}
+
+    .book-info h3 {
+        margin: 0 0 8px;
+        font-size: 17px;
+    }
+
+    .book-info p {
+        margin: 6px 0;
+        font-size: 14px;
+        line-height: 1.5;
+    }
+
+    .book-info a {
+        color: #31566d;
+        font-size: 14px;
+    }
+
+.empty-message {
+    color: #777;
+    font-size: 14px;
+}
+
+footer {
+    padding: 20px;
+    text-align: center;
+    color: #777;
+    font-size: 13px;
+}
+
+@media (max-width: 600px) {
+    .block {
+        padding: 18px;
+    }
+
+    .book-item {
+        gap: 10px;
+    }
+
+        .book-item img {
+            width: 65px;
+            height: 95px;
+        }
+}
